@@ -36,7 +36,7 @@
         </div>
         <div class="right">
 
-            <video src="assets/videos/kraven.mp4" id="video" autoplay></video>
+            <video src="assets/videos/kraven.mp4" id="video"></video>
 
             <div class="head-time">
                 <h1>Kraven The Hunter</h1>
@@ -349,6 +349,49 @@
                 </div>
              </div>
 
+             <!-- Ticket -->
+
+             <div class="ticket-section">
+                <div class="ticket">
+                    <div class="barcode">
+                        <div class="card">
+                            <h6>ROW J</h6>
+                            <h6>1 January 2025</h6>
+                        </div>
+                        <div class="card">
+                            <h6>Seat 18</h6>
+                            <h6>19:00</h6>
+                        </div>
+
+                        <svg id="barcode"></svg>
+                        <h5>ABSOLUTE CINEMA</h5>
+                    </div>
+                    <div class="details">
+                        <div class="type">4DX</div>
+                        <h5 class="pvr"><span>Absolute</span> Cinema</h5>
+                        <h1>Kraven The Hunter</h1>
+                        <div class="seat-details">
+                            <div class="seat-card">
+                                <h6>ROW</h6>
+                                <h6>J</h6>
+                            </div>
+                            <div class="seat-card">
+                                <h6>SEAT</h6>
+                                <h6>18</h6>
+                            </div>
+                            <div class="seat-card">
+                                <h6>DATE</h6>
+                                <h6>1 <sub>jan</sub></h6>
+                            </div>
+                            <div class="seat-card">
+                                <h6>TIME</h6>
+                                <h6>19:00 <sub>pm</sub></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
              <!-- Details -->
             <div class="details" id="det">
                 <div class="chair-details">
@@ -357,8 +400,23 @@
                     <li>Selected</li>
                 </div>
             </div>
+            <button class="book-ticket" id="book-ticket">
+                <i class="bi bi-arrow-right-short"></i>
+            </button>
+            <button class="book-ticket" id="back-ticket">
+                <i class="bi bi-arrow-left-short"></i>
+            </button>
+
         </div>
     </div>
+
+    <script src="app.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.js"></script>
+
+    <script>
+        JsBarcode("#barcode", "J18800112025");
+    </script>
 </body>
 
 </html>
