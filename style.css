@@ -277,7 +277,7 @@ body {
     color: #fff;
     letter-spacing: 5px;
     font-size: 12px;
-    display: none;
+    /* display: none; */
 }
 
 .book .right .screen:before {
@@ -294,7 +294,7 @@ body {
 .book .right .chair {
     width: 95%;
     margin: auto;
-    display: none;
+    /* display: none; */
     /* border: 1px solid #fff; */
 }
 
@@ -369,7 +369,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 
 .book .right .details .chair-details {
@@ -452,7 +452,7 @@ body {
     font-size: 18px;
     cursor: pointer;
     transition: .3s linear;
-    display: none; 
+    /* display: none;  */
 }
 
 .book .right .book-ticket .bi-arrow-right-short {
@@ -473,6 +473,7 @@ body {
     /* border: 1px solid #fff; */
     margin-top: 20px;
     overflow-y: auto;
+    display: none;
 }
 
 .book .right .ticket-section::-webkit-scrollbar {
