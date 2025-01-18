@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            display: unset;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffff;
+            font-weight: 600;
+        }
+
+        nav a span {
+            color: skyblue;
+        }
+
+        .cards {
+            position: relative;
+            width: 90%;
+            height: auto;
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .cards .card {
+            min-width: 130px;
+            height: 180px;
+            border-radius: 8px;
+            margin-right: 10px;
+            background: #0000;
+            transition: .3s linear;
+            margin-top: 10px;
+        }
+
+        .cards .card img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/"><span>Absolute </span>Cinema</a>
+    </nav>
+
+    <div class="cards">
+        <a href="book.html?Kraven" class="card">
+            <img src="assets/images/kraven.png" alt="kraven poster">
+        </a>
+        <a href="book.html?MysteriousSkin" class="card">
+            <img src="assets/images/mysterious_skin.jpg" alt="mysterious skin poster">
+        </a>
+        <a href="book.html?Maurice" class="card">
+            <img src="assets/images/maurice_poster.jpg" alt="maurice poster">
+        </a>
+        <a href="book.html?AllAboutLilyChouChou" class="card">
+            <img src="assets/images/all about lily chou chou.jpg" alt="ablcc poster">
+        </a>
+        <a href="book.html?Picnic" class="card">
+            <img src="assets/images/picnic_poster.jpg" alt="picnic poster">
+        </a>
+        <a href="book.html?MirroredMind" class="card">
+            <img src="assets/images/mirrore_mind.jpg" alt="mirrored mind poster">
+        </a>
+    </div>
+</body>
+
+</html>
